@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--<meta charest="utf-8">-->
+       <!--<meta name="viewpoint" content="width=device-width, initial-scale=1.0">-->
+       <link rel="stylesheet" type="text/css" href="main.css">
+ 
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="brand">
+                    <a href="index.html"><img src="img/Group%202.png" alt="sio"></a>
+                </div>
+                
+                <div class="menu">
+                    <div class="mu">
+                        <a href="#" class="mulink">Courses</a>
+                        <a href="#" class="mulink">Finance</a>
+                        <a href="#" class="mulink">Academic</a>
+                        <a href="#" class="mulink">Campus</a>
+                    </div>
+                    
+                    <div class="muicon">
+                        <a href="#" class="iconlink"><img src="img/magnify.png"  alt="search"></a>
+                        <a href="#" class="iconlink"><img src="img/account.png" alt="account"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div class="content">
+                <div class="side"></div>
+                <div class="calendar">
+                    <div class="date">
+                        <div class="title">
+                            <div class="week">Mon</div>
+                            <div class="day"></div>
+                            </div>
+                        <div class="course">
+                           
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="digital">
+                                <div class="coursetime" >
+                                    <div class="c-start">8:00</div>
+                                    <div class="c-stop">9:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Advanced Web Design</div>
+                                    <div class="others">
+                                        <div class="location">MM B3</div>
+                                        <div class="extra"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="collect">
+                                <div class="coursetime" >
+                                    <div class="c-start">10:00</div>
+                                    <div class="c-stop">12:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Fabrication Skills</div>
+                                    <div class="others">
+                                        <div class="location">400SC R102</div>
+                                        <div class="extra"><img src="img/star.png" id="collect_icon"  alt="remove from collection"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="waitlist">
+                                <div class="coursetime" >
+                                    <div class="c-start">13:00</div>
+                                    <div class="c-stop">15:50</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Interaction Design Studio</div>
+                                    <div class="others">
+                                        <div class="location">400SC R102</div>
+                                        <div class="extra">2/5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="shortbreak"></div>
+                            
+                            <div class="onecourse" id="basic">
+                                <div class="coursetime" >
+                                    <div class="c-start">16:00</div>
+                                    <div class="c-stop">17:50</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Visualization</div>
+                                    <div class="others">
+                                        <div class="location">MM B3</div>
+                                        <div class="extra"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="title">
+                            <div class="week">Tue</div>
+                            <div class="day"></div>
+                            </div>
+                        <div class="course">
+                            <div class="break1"></div>
+                            <div class="onecourse" id="digital">
+                                <div class="coursetime" >
+                                    <div class="c-start">18:00</div>
+                                    <div class="c-stop">20:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Interactive Data</div>
+                                    <div class="others">
+                                        <div class="location">GHC 4203</div>
+                                        <div class="extra"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="title">
+                               <div class="week" id="today" style="color:#bb0000">Wed</div>
+                                <div class="day" id="today" style="color:#bb0000">2/25</div>
+                            </div>
+                        <div class="course">
+                           
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="digital" onclick="myFunction()">
+                                <div class="coursetime" >
+                                    <div class="c-start">8:00</div>
+                                    <div class="c-stop">9:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename" >Advanced Web Design</div>
+                                    <div class="others">
+                                        <div class="location">MM B3</div>
+                                        <div class="extra"> </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="collect">
+                                <div class="coursetime" >
+                                    <div class="c-start">10:00</div>
+                                    <div class="c-stop">12:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Fabrication Skills</div>
+                                    <div class="others">
+                                        <div class="location">400SC R102</div>
+                                        <div class="extra"><img src="img/star.png" id="collect_icon"  alt="remove from collection"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="longbreak"></div>
+                            
+                            <div class="onecourse" id="waitlist">
+                                <div class="coursetime" >
+                                    <div class="c-start">13:00</div>
+                                    <div class="c-stop">15:50</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Interaction Design Studio</div>
+                                    <div class="others">
+                                        <div class="location">400SC R102</div>
+                                        <div class="extra">2/5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="shortbreak"></div>
+                            
+                            <div class="onecourse" id="basic">
+                                <div class="coursetime" >
+                                    <div class="c-start">16:00</div>
+                                    <div class="c-stop">17:50</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Visualization</div>
+                                    <div class="others">
+                                        <div class="location">MM B3</div>
+                                        <div class="extra"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="title">
+                            <div class="week">Thu</div>
+                            <div class="day"></div>
+                            </div>
+                        <div class="course">
+                            <div class="break1"></div>
+                            <div class="onecourse" id="digital">
+                                <div class="coursetime" >
+                                    <div class="c-start">18:00</div>
+                                    <div class="c-stop">20:30</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Interactive Data</div>
+                                    <div class="others">
+                                        <div class="location">GHC 4203</div>
+                                        <div class="extra"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <div class="title">
+                            <div class="week">Fri</div>
+                            <div class="day"></div>
+                            </div>
+                        <div class="course">
+                            <div class="break2"></div>
+                            <div class="onecourse" id="research">
+                                <div class="coursetime" >
+                                    <div class="c-start">10:30</div>
+                                    <div class="c-stop">12:10</div>
+                                </div>
+                                <div class="coursemain">
+                                    <div class="coursename">Capstone Seminar</div>
+                                    <div class="others">
+                                        <div class="location">GHC 4203</div>
+                                        <div class="extra"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+    </body>
+</html>

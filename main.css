@@ -1,0 +1,297 @@
+html{
+    font-family: "Roboto";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    height: 155px;
+    background-color: #BB0000;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    margin-left: 62px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;  
+    font-size: 1.12em;
+}
+
+.mu {
+    display: flex;
+    flex-direction: row
+}
+
+.mulink{
+    margin: 2vw;  
+}
+
+.muicon{
+    margin: 2vw;
+}
+
+.iconlink{
+    margin: 1vw;
+}
+
+.content{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction:row;
+}
+
+.side{
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    width: 15%;
+    
+}
+
+.calendar {
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    width:85%;
+}
+
+.date {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-size: 2vw;
+    border-left-style: solid;
+    border-width: 0.8px;
+    border-color: #E0E0E0;
+    
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-style: solid;
+    border-width: 0.8px;
+    border-color: #E0E0E0;
+} 
+
+.week {
+    margin-top: 30px;
+   
+}
+
+ .day {
+    margin-top: 10px;
+    font-size: 0.6em;
+    height: 50px;   
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+}
+
+.longbreak{
+    height:2vw;
+}
+
+.shortbreak{
+    height:0.5vw;
+}
+
+.onecourse{
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 2vw;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    padding-bottom: 2vw;
+    
+}
+
+.coursetime {
+    color: #757575;
+    font-size: 1vw;
+    margin-left: 0.8vw;
+    margin-right: 1vw;
+}
+
+.c-start{
+    margin-bottom:0.4vw;
+}
+
+.coursename {
+    color: black;
+    font-size: 1vw;
+}
+
+.others{
+    color: #B2B2B2;
+    font-size: 0.8vw;
+    margin-top: 0.6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#digital{
+    border-left: #FFC232 solid 6px
+}
+
+#collect, #waitlist{
+    border-left: #ffffff solid 6px   
+}
+
+#basic {
+    border-left: #2F52A3 solid 6px  
+}
+
+#research {
+    border-left: #43A047 solid 6px  
+}
+
+
+#collect_icon {
+    width:1.8vw;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+.break1 {
+    height:35vw;
+}
+
+.break2 {
+    height:12vw;
+}
+
+
+
+/*click for details*/
+
+.onecourse {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.onecourse .popuptext {
+    /*visibility: hidden;*/
+    
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: relative;
+    z-index: 1;
+    top:0;
+    left: 5vw;;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.onecourse .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.onecourse .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
