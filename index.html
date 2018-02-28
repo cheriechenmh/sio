@@ -6,9 +6,10 @@
        <link rel="stylesheet" type="text/css" href="main.css">
  
     </head>
+
     
     <body>
-        <div class="container">
+        <div class="container" id="container">
             <div class="nav">
                 <div class="brand">
                     <a href="index.html"><img src="img/Group%202.png" alt="sio"></a>
@@ -137,10 +138,29 @@
                            
                             <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="digital" onclick="myFunction()">
+                            <div class="onecourse" id="digital-id" onclick="myFunction()">
                                 <div class="coursetime" >
                                     <div class="c-start">8:00</div>
-                                    <div class="c-stop">9:30</div>
+                                    <div class="c-stop">9:30</div></div>
+                                <div class="pop-up" id="pop-up">
+                                        <!--<div class="detail" id="d1">
+                                            <div id="d1-s">
+                                                <div id="di-s-n">Advanced Web Design</div>
+                                                <div>8:00 - 9:30   M W</div>
+                                            </div>
+                                            <div id="d1-e">
+                                                <div id="d1-e-t"><img src="img/Oval%202.png" alt="digital"></div>
+                                                <div id="d1-e-d">51-828 A</div>
+                                            </div>
+                                        </div>
+                                        <div class="detail">
+                                            <div id="de-icon"></div>
+                                        </div>
+                                        <div class="detail"></div>
+                                        <div class="detail"></div>
+                                        <div class="detail"></div>-->
+                                      <div class="de-title"><div id=de-title-n>Advacned Web Design</div>
+                                      <div id="de-title-t">8:00 - 9:30  M W</div></div>  
                                 </div>
                                 <div class="coursemain">
                                     <div class="coursename" >Advanced Web Design</div>
@@ -150,7 +170,7 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                                </div>
                             
                             <div class="longbreak"></div>
                             
@@ -245,11 +265,40 @@
                                 </div>
                             </div>
                     </div>
-                </div>
+                </div></div>
             </div>
         </div>
-        
-       
-        
     </body>
+    
+    <script>
+        const card = document.getElementById("digital-id")
+        const popUp = document.getElementById("pop-up")
+        const container = document.getElementById("container")
+        let isPopUpShow = false
+
+        card.onclick = function(e) {
+            showPopUp(e)
+        }
+        container.onclick = function(e) {
+            closePopUp(e)
+        }
+        
+        function closePopUp(e) {
+            console.log("testClose")
+            if(isPopUpShow === true) {
+                popUp.setAttribute("style", "display:none")
+                isPopUpShow = false
+            }
+        }
+        
+        function showPopUp(e) {
+            console.log("testShow")
+            popUp.setAttribute("style", "display:block")
+            if(isPopUpShow === false){
+                e.stopPropagation()
+            }
+            isPopUpShow = true
+        }
+
+    </script>
 </html>

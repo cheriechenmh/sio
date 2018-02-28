@@ -77,7 +77,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 20%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-left-style: solid;
     border-width: 0.8px;
     border-color: #E0E0E0;
@@ -94,14 +94,14 @@ a {
 } 
 
 .week {
-    margin-top: 30px;
+    margin-top: 2vw;
    
 }
 
  .day {
     margin-top: 10px;
     font-size: 0.6em;
-    height: 50px;   
+    height: 4vw;   
 }
 
 .course {
@@ -124,6 +124,10 @@ a {
     padding-top: 2vw;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
     padding-bottom: 2vw;
+    
+}
+
+.yellow{
     
 }
 
@@ -153,7 +157,7 @@ a {
     align-items: center;
 }
 
-#digital{
+#digital, #digital-id{
     border-left: #FFC232 solid 6px
 }
 
@@ -189,69 +193,76 @@ a {
 
 /*click for details*/
 
-.onecourse {
+.onecourse, .week{
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-/* The actual popup */
-.onecourse .popuptext {
-    /*visibility: hidden;*/
+#digital-id{
+    position:relative;
     
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: relative;
-    z-index: 1;
-    top:0;
-    left: 5vw;;
-    margin-left: -80px;
 }
 
-/* Popup arrow */
-.onecourse .popuptext::after {
-    content: "";
+.pop-up {
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.onecourse .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    left: 17vw;
+    top:-0.1vw;
+    width:31vw;
+    height: 39vw;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 
 
+.digital-id {
+    z-index: 10000000;
+}
+
+.container {
+    z-index: 1000;
+}
+
+.pop-up {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "header header header . aside"
+        "i1 p1 p1 . aside1 aside1"
+        "i2 p2 p2 . aside2 aside2"
+        "i3 p3 p3 . aside3 aside3"
+        "i4 p4 p4 p4 p4 ."
+        ". p4 p4 p4 p4 aside4"  
+}
+
+.de-title{
+    grid-area: header;
+    justify-self: center;
+    align-self: center;    
+    
+}
+
+#de-title-n{
+    font-size: 1.2vw;
+}
+
+#de-title-t{
+    font-size: 1vw;
+}
 
 
+/*responsive*/
 
+@media only screen and (max-width: 940px) {
+    
+a {
+    font-size: 0.8em;
+}    
 
-
-
-
+    
+    
+}
 
 
 
