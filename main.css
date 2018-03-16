@@ -267,6 +267,17 @@ a {
 
 
 
+@media only screen and (max-width: 414px) {
+
+    .side{
+        display:none;
+        width:0%;
+    }
+    
+    .calendar{
+        width:100%;
+    }
+}
 
 
 
