@@ -223,18 +223,7 @@ a {
     z-index: 1000;
 }
 
-.pop-up {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    grid-template-areas: 
-        "header header header . aside"
-        "i1 p1 p1 . aside1 aside1"
-        "i2 p2 p2 . aside2 aside2"
-        "i3 p3 p3 . aside3 aside3"
-        "i4 p4 p4 p4 p4 ."
-        ". p4 p4 p4 p4 aside4"  
-}
+
 
 .de-title{
     grid-area: header;
@@ -267,17 +256,6 @@ a {
 
 
 
-@media only screen and (max-width: 414px) {
-
-    .side{
-        display:none;
-        width:0%;
-    }
-    
-    .calendar{
-        width:100%;
-    }
-}
 
 
 
