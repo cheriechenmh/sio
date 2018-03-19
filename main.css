@@ -1,5 +1,5 @@
 html{
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
 
 body{
@@ -31,7 +31,7 @@ body{
 a {
     text-decoration: none;
     color: white;  
-    font-size: 1.12em;
+    font-size: 1em;
 }
 
 .mu {
