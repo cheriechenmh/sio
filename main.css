@@ -272,7 +272,7 @@ a {
 }
 
 
-/*responsive*/
+/*1----responsive*/
 
 @media only screen and (max-width: 940px) {
     
@@ -316,7 +316,7 @@ a {
 
 
 
-/*tablet*/
+/*2----tablet*/
 @media only screen and (max-width: 768px) {
     
 a {
@@ -326,7 +326,7 @@ a {
 }
 
 
-/*breakpoint-transition*/
+/*3----breakpoint-transition*/
 
 @media only screen and (max-width: 660px) {
 
@@ -385,7 +385,7 @@ a {
 
 
 
-/*mobile*/
+/*4----mobile*/
 @media only screen and (max-width: 414px) {
  
     .nav{
@@ -394,11 +394,19 @@ a {
     
     .brand img{
         
-  -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.65); /* FF3.5+ */
-      -ms-transform: scale(0.65); /* IE9 */
-       -o-transform: scale(0.65); /* Opera 10.5+ */
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+       -o-transform: scale(0.5); /* Opera 10.5+ */
           transform: scale(0.5); 
+    }
+    
+    #more{
+        margin-left:1.2em;
+    }
+    
+    .hide img{
+        margin-left:1.2em;
     }
     
 }
