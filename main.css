@@ -14,11 +14,13 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 }
 
 
 .hide{
     display:none;
+    transition: all 0.5s ease;
 }
 
 
@@ -28,10 +30,12 @@ body{
     justify-content: space-between;
     align-items: center; 
     width:100%;
+    transition: all 0.5s ease;
 }
 
 .brand{
     margin-left: 62px;
+    transition: all 0.5s ease;
 }
 
 .menu{
@@ -286,9 +290,20 @@ a {
         
     }
     
-    
+          .brand img{
 
-    
+        
+  -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.8); /* FF3.5+ */
+      -ms-transform: scale(0.8); /* IE9 */
+       -o-transform: scale(0.8); /* Opera 10.5+ */
+          transform: scale(0.8); 
+    }  
+
+      
+    .brand{
+    margin-left: 2em;
+}  
     
     
     
@@ -303,27 +318,13 @@ a {
 a {
     font-size: 0.8em;
 }    
-
-    
-           .brand img{
-        
-  -webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.6); /* FF3.5+ */
-      -ms-transform: scale(0.6); /* IE9 */
-       -o-transform: scale(0.6); /* Opera 10.5+ */
-          transform: scale(0.6); 
-    }
-    
-    .brand{
-    margin-left: 42px;
-}
     
 }
 
 
 /*breakpoint-transition*/
 
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 660px) {
 
     .i1{
         display:none;
@@ -335,9 +336,20 @@ a {
     
     #more{
         display:inherit;
-        margin: 2.5em;
+        margin-right: 1em;
+        margin-left:3em;
     }
     
+        .brand img{
+        
+  -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.65); /* FF3.5+ */
+      -ms-transform: scale(0.65); /* IE9 */
+       -o-transform: scale(0.65); /* Opera 10.5+ */
+          transform: scale(0.65); 
+    }
+    
+
     
 .hide{
     display:inherit;
@@ -355,9 +367,15 @@ a {
     
     .display{
         display:flex;
-        justify-content: flex-end;
-        
+        justify-content: flex-end;  
     }
+    
+    .brand{
+        margin:1.3em;
+        width:130px;   
+    }
+    
+    
 }
 
 
@@ -366,6 +384,18 @@ a {
 /*mobile*/
 @media only screen and (max-width: 414px) {
  
+    .nav{
+        height:91px;
+    }
+    
+    .brand img{
+        
+  -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.65); /* FF3.5+ */
+      -ms-transform: scale(0.65); /* IE9 */
+       -o-transform: scale(0.65); /* Opera 10.5+ */
+          transform: scale(0.5); 
+    }
     
 }
 
