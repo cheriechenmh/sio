@@ -15,12 +15,14 @@ body{
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
 }
 
 
 .hide{
     display:none;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 
@@ -31,11 +33,13 @@ body{
     align-items: center; 
     width:100%;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 .brand{
     margin-left: 62px;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 .menu{
