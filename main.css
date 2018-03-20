@@ -36,11 +36,16 @@ a {
 
 .mu {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
 .mulink{
     margin: 2vw;  
+}
+
+#mulinkok{
+     font-weight:600;
+     font-size:1.1em;
 }
 
 .muicon{
@@ -249,12 +254,44 @@ a {
     font-size: 0.8em;
 }    
 
+ .muicon img{
+    height: 18px
+    
+}
+
+#mulinkok {
+        font-size: 0.8em;
+        
+    }
+    
+    
+
+    
+    
+    
     
     
 }
 
 
 
+/*tablet*/
+@media only screen and (max-width: 768px) {
+    
+a {
+    font-size: 0.8em;
+}    
+
+    .nav{
+        height: 120px;
+    }
+    
+    .brand img{
+        height: 80%;
+        
+    }
+    
+}
 
 
 
