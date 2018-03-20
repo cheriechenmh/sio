@@ -44,14 +44,18 @@ a {
 }
 
 #mulinkok{
-     font-weight:600;
+     font-weight:500;
      font-size:1.1em;
 }
+
 
 .muicon{
     margin: 2vw;
 }
 
+#more {
+    display:none;
+}
 .iconlink{
     margin: 1vw;
 }
@@ -287,13 +291,61 @@ a {
     }
     
     .brand img{
-        height: 80%;
+        
+  -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.8); /* FF3.5+ */
+      -ms-transform: scale(0.8); /* IE9 */
+       -o-transform: scale(0.8); /* Opera 10.5+ */
+          transform: scale(0.8); 
+    }
+    
+    .brand{
+    margin-left: 42px;
+}
+    
+}
+
+@media only screen and (max-width: 645px) {
+    
+    .mu{
         
     }
+    
+    .i1{
+        display:none;
+    }
+    
+    #more{
+        display:inherit;
+    }
+    
+        .brand img{
+        
+  -webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.6); /* FF3.5+ */
+      -ms-transform: scale(0.6); /* IE9 */
+       -o-transform: scale(0.6); /* Opera 10.5+ */
+          transform: scale(0.6); 
+    }
+    
     
 }
 
 
+
+
+
+/*mobile*/
+@media only screen and (max-width: 414px) {
+
+    .menu{
+        display:none;
+    }
+    
+    
+    
+    
+}
 
 
 
