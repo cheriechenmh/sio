@@ -41,18 +41,134 @@
             </div>
         
             <div class="content">
-                <div class="side"></div>
+                <div class="side">
+                   
+                    <div class="side-today">
+                        <div class="todaybutton">TODAY</div>
+                        <div class="todaynum"><input id="date" type="date" value="2018-03-21"></div>
+                    </div>
+                    
+                    <div class="month-calendar">
+                        <div class="month">      
+                              <div>March 2018</div>
+                              <div class="iconmonth">
+                                  <div class="prev"><ul><li>&#10094;</li></ul></div>
+                                  <div class="next"><ul><li>&#10095;</li></ul></div>
+                              </div>
+                                
+                            </div>
+
+                        <ul class="weekdays">
+                              <li>S</li>
+                              <li>M</li>
+                              <li>T</li>
+                              <li>W</li>
+                              <li>T</li>
+                              <li>F</li>
+                              <li>S</li>
+                            </ul>
+
+                        <ul class="days">  
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li>1</li>
+                              <li>2</li>
+                              <li>3</li>
+                              <li>4</li>
+                              <li>5</li>
+                              <li>6</li>
+                              <li>7</li>
+                              <li>8</li>
+                              <li>9</li>
+                              <li>10</li>
+                              <li>11</li>
+                              <li>12</li>
+                              <li>13</li>
+                              <li>14</li>
+                              <li>15</li>
+                              <li>16</li>
+                              <li>17</li>
+                              <li>18</li>
+                              <li>19</li>
+                              <li>20</li>
+                              <li><span class="active">21</span></li>
+                              <li>22</li>
+                              <li>23</li>
+                              <li>24</li>
+                              <li>25</li>
+                              <li>26</li>
+                              <li>27</li>
+                              <li>28</li>
+                              <li>29</li>
+                              <li>30</li>
+                              <li>31</li>
+                            </ul>
+                            
+                    </div>
+                    
+                    <div class="check">
+                        <div class="checktt">Categories</div>
+                        <div class="cbox">
+                            <label class="containers cx1">Digital
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark c1"></span>
+                            </label>
+                            <label class="containers">Research
+                              <input type="checkbox">
+                              <span class="checkmark c2"></span>
+                            </label>
+                            <label class="containers">Basics
+                              <input type="checkbox">
+                              <span class="checkmark c3"></span>
+                            </label>
+                            <label class="containers">Waitlist
+                              <input type="checkbox">
+                              <span class="checkmark c4"></span>
+                            </label>
+                            <label class="containers">Collected
+                              <input type="checkbox">
+                              <span class="checkmark c5"></span>
+                            </label>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
                 <div class="calendar">
+                  
+                  <!--time-->
+                  <div class="line">
+                     <div class="clock-break"></div>
+                      <div class="clock">
+                          <p>8am</p>
+                          <p>9am</p>
+                          <p>10am</p>
+                          <p>11am</p>
+                          <p>12pm</p>
+                          <p>1pm</p>
+                          <p>2pm</p>
+                          <p>3pm</p>
+                          <p>4pm</p>
+                          <p>5pm</p>
+                          <p>6pm</p>
+                          <p>7pm</p>
+                          <p>8pm</p>
+                          <p>9pm</p>
+                      </div>
+                  </div>
+                  
+                   <!--Mon courses-->
                     <div class="date">
                         <div class="title">
                             <div class="week">Mon</div>
                             <div class="day"></div>
                             </div>
                         <div class="course">
-                           
-                            <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="digital">
+                               <div class="onecourse" id="digital">
                                 <div class="coursetime" >
                                     <div class="c-start">8:00</div>
                                     <div class="c-stop">9:30</div>
@@ -66,9 +182,9 @@
                                 </div>
                             </div>
                             
-                            <div class="longbreak"></div>
+                                <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="collect">
+                                <div class="onecourse" id="collect">
                                 <div class="coursetime" >
                                     <div class="c-start">10:00</div>
                                     <div class="c-stop">12:30</div>
@@ -82,9 +198,9 @@
                                 </div>
                             </div>
                             
-                            <div class="longbreak"></div>
+                                <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="waitlist">
+                                <div class="onecourse" id="waitlist">
                                 <div class="coursetime" >
                                     <div class="c-start">13:00</div>
                                     <div class="c-stop">15:50</div>
@@ -98,9 +214,9 @@
                                 </div>
                             </div>
                             
-                            <div class="shortbreak"></div>
+                                <div class="shortbreak"></div>
                             
-                            <div class="onecourse" id="basic">
+                                <div class="onecourse" id="basic">
                                 <div class="coursetime" >
                                     <div class="c-start">16:00</div>
                                     <div class="c-stop">17:50</div>
@@ -115,7 +231,10 @@
                             </div>
                             
                         </div>
+                        
                     </div>
+                    
+                    <!--Tue courses-->
                     <div class="date">
                         <div class="title">
                             <div class="week">Tue</div>
@@ -138,16 +257,17 @@
                             </div>
                         </div>
                     </div>
+                    
+                     <!--Wed courses-->                   
                     <div class="date">
                         <div class="title">
                                <div class="week" id="today" style="color:#bb0000">Wed</div>
-                                <div class="day" id="today" style="color:#bb0000">2/25</div>
+                                <div class="day" id="today" style="color:#bb0000">3/21</div>
                             </div>
                         <div class="course">
-                           
-                            <div class="longbreak"></div>
+                
                             
-                            <div class="onecourse" id="digital-id" onclick="myFunction()">
+                                <div class="onecourse" id="digital-id" onclick="myFunction()">
                                 <div class="coursetime" >
                                     <div class="c-start">8:00</div>
                                     <div class="c-stop">9:30</div></div>
@@ -181,9 +301,9 @@
                                 
                                 </div>
                             
-                            <div class="longbreak"></div>
+                                <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="collect">
+                                <div class="onecourse" id="collect">
                                 <div class="coursetime" >
                                     <div class="c-start">10:00</div>
                                     <div class="c-stop">12:30</div>
@@ -197,9 +317,9 @@
                                 </div>
                             </div>
                             
-                            <div class="longbreak"></div>
+                                <div class="longbreak"></div>
                             
-                            <div class="onecourse" id="waitlist">
+                                <div class="onecourse" id="waitlist">
                                 <div class="coursetime" >
                                     <div class="c-start">13:00</div>
                                     <div class="c-stop">15:50</div>
@@ -213,9 +333,9 @@
                                 </div>
                             </div>
                             
-                            <div class="shortbreak"></div>
+                                <div class="shortbreak"></div>
                             
-                            <div class="onecourse" id="basic">
+                                <div class="onecourse" id="basic">
                                 <div class="coursetime" >
                                     <div class="c-start">16:00</div>
                                     <div class="c-stop">17:50</div>
@@ -231,6 +351,9 @@
                             
                         </div>
                     </div>
+                    
+                    
+                      <!--Thu courses-->                     
                     <div class="date">
                         <div class="title">
                             <div class="week">Thu</div>
@@ -253,6 +376,9 @@
                             </div>
                         </div>
                     </div>
+                    
+                                     
+                      <!--Fri courses-->         
                     <div class="date">
                         <div class="title">
                             <div class="week">Fri</div>
@@ -274,7 +400,9 @@
                                 </div>
                             </div>
                     </div>
-                </div></div>
+                </div>
+                
+                </div>
             </div>
         </div>
     </body>

@@ -256,18 +256,25 @@ input[type="date"], focus {
 
 /*----side-checkbox----*/
 
+
+.check{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin:30px 20px;
+    }
 .checktt{
     color:#757575;
     font-size: 0.875em;
-    margin:30px 20px;
-}
+    margin-bottom:20px;
 
+}
 .containers {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
-    margin:25px 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     font-size:0.875em;
     -webkit-user-select: none;
@@ -652,6 +659,44 @@ a {
 -webkit-transition: width 0.5s ease;
     }
     
+    /*----side-checkbox----*/
+
+.check{
+        margin:30px 20px;
+    }
+    
+.checktt{
+    font-size: 0.875em;
+    margin-bottom:20px;
+
+}
+.containers {
+    padding-left: 25px;
+    margin-bottom: 20px;
+    font-size:0.75em;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    height: 15px;
+    width: 15px;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+
+
+/* Style the checkmark/indicator */
+.containers .checkmark:after {
+    left: 3px;
+    bottom: 2px;
+    width:3px;
+    height: 7px;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+
     
     
     
@@ -685,6 +730,47 @@ a {
         transition: width 0.5s ease;
 -webkit-transition: width 0.5s ease;
     }
+   
+    /*----side-checkbox----*/
+
+.check{
+        margin:20px 10px;
+    }
+    
+.checktt{
+    font-size: 0.75em;
+    margin-bottom:20px;
+
+}
+.containers {
+    padding-left: 25px;
+    margin-bottom: 20px;
+    font-size:0.7em;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    height: 13px;
+    width: 13px;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+
+
+/* Style the checkmark/indicator */
+.containers .checkmark:after {
+    left: 1.5px;
+    bottom: 1px;
+    width:3px;
+    height: 7px;
+    transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+}
+    
+    
+    
     
     /*--timeline---*/
     p{
@@ -697,6 +783,7 @@ a {
         transition: all 0.5s ease;
 -webkit-transition: all 0.5s ease;
     }
+    
     
     
 }
@@ -787,9 +874,12 @@ a {
     
 }
 
-#digital {
+
+
+/*--set the visibility--*/
+/*#digital {
     visibility: hidden;
-}
+}*/
 
 /*---trigger display of courses--*/
 .cx1 input:checked ~ #digital {
