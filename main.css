@@ -1,11 +1,22 @@
 html{
+    width:100%;
     font-family: 'Roboto', Arial, sans-serif;
 }
 
 body{
     margin: 0;
     padding: 0;
+    width:100%;
 }
+
+.container{
+    width:100%;
+}
+
+.content{
+    width:100%;
+}
+
 
 .nav{
     height: 155px;
@@ -88,6 +99,7 @@ a {
     background-color: #F8F8F8;
     display: flex;
     flex-direction:row;
+    width:100%;
 }
 
 .side{
@@ -381,20 +393,16 @@ input[type="date"], focus {
 
 
 
-/*-----main----*/
-
+/*---------------main------------------*/
 
 
 /*---timeline---*/
-.calendar {
-    background-color: white;
-    display: flex;
-    flex-direction: row; 
-    width:90%;
-}
+
 
 .line{
+    background-color: white;
     border-left-style: solid;
+    border-bottom-style: solid;
     border-width: 0.8px;
     border-color: #E0E0E0;
     width:46px;
@@ -411,28 +419,47 @@ input[type="date"], focus {
 }
 
 .clock-break{
-    height:110px;
+    height:120px;
 }
 
 p{
     font-size:0.64em;
     color:#919191;
     font-weight:300;
+    padding:0;
+    margin:0;
+    margin-bottom:67.5px;
+}
+/*--time length: 80mins=90px, 60mins=67.5px-----*/
+
+/*---------------courses---------------*/
+
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
 }
 
+.calendar {
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    width: calc(100% - 166px) 
+}
 
 .date {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    font-size: 1.5vw;
+    width:20%;
     border-left-style: solid;
+    border-bottom-style: solid;
     border-width: 0.8px;
-    border-color: #E0E0E0;
-    
+    border-color: #E0E0E0;  
 }
 
+.clearfix{
+    clear: both;
+    overflow: hidden;
+}
 
 .title {
     display: flex;
@@ -441,16 +468,18 @@ p{
     border-bottom-style: solid;
     border-width: 0.8px;
     border-color: #E0E0E0;
+    height:125px;
 } 
 
 .week {
-    margin-top: 2vw;
+    margin-top: 25px;
+    font-size: 1.5em;
    
 }
 
  .day {
     margin-top: 10px;
-    font-size: 0.6em;
+    font-size: 1em;
     height: 4vw;   
 }
 
@@ -460,51 +489,59 @@ p{
 }
 
 .longbreak{
-    height:2vw;
+    height:30px;
 }
 
 .shortbreak{
-    height:0.5vw;
+    height:10px;
 }
 
 .onecourse{
-    
+    background-color: white;
     display: flex;
     flex-direction: row;
-    padding-top: 2vw;
+    padding-top: 20px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
-    padding-bottom: 2vw;
-    
+    padding-bottom: 20px;
 }
 
-.yellow{
-    
+/*---length of courses--*/
+
+.shortcourse{
+    height:90px;
 }
 
+.longcourse{
+    height:120px;
+}
 .coursetime {
     color: #757575;
-    font-size: 1vw;
+    font-size: 0.8em;
     margin-left: 0.8vw;
     margin-right: 1vw;
+    margin-top: 0.3vw;
 }
 
 .c-start{
-    margin-bottom:0.4vw;
+    margin-bottom:0.4em;
 }
 
 .coursename {
     color: black;
-    font-size: 1vw;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-top: 0.1em;
 }
 
 .others{
     color: #B2B2B2;
-    font-size: 0.8vw;
-    margin-top: 0.6vw;
+    font-size: 0.8em;
+    margin: 0.2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 
 #digital, #digital-id{
@@ -525,18 +562,22 @@ p{
 
 
 #collect_icon {
-    width:1.8vw;
-    height:auto;
+    width:auto;
+    height:20px;
     margin:0;
     padding:0;
 }
 
+.extra{
+    margin: 0 2em;
+}
+
 .break1 {
-    height:35vw;
+    height:560px;
 }
 
 .break2 {
-    height:12vw;
+    height:180px;
 }
 
 
@@ -555,13 +596,17 @@ p{
 .pop-up {
     display: none;
     position: absolute;
-    left: 17vw;
-    top:-0.1vw;
-    width:31vw;
-    height: 39vw;
+    left: 16vw;
+    top:-0.8vw;
+    /*width:350px;
+    height: 613px;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);*/
 }
+
+.popup2{
+        visibility:hidden;
+    }
 
 
 
@@ -697,10 +742,40 @@ a {
 -webkit-transition: width 0.5s ease;
 }
 
+
+/*------main------*/
+    .clock-break{
+        height:100px;
+        transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+    }
+    
+    .title{
+        font-size:0.8em;
+            height:105px;
+        transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+    }
+    
+/*-----set time length----*/  
+    p{
+    margin-bottom:60px;
+        transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+}
+    .shortcourse{
+        height: 120px;
+        transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+    }
+/*--time length: 120mins=120px, 60mins=60px-----*/
+
     
     
     
 }
+
+
 
 
 
@@ -784,7 +859,23 @@ a {
 -webkit-transition: all 0.5s ease;
     }
     
+    /*------main------*/
+    .clock-break{
+        height:80px;
+        transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+    }
     
+    .title{
+        font-size:0.7em;
+            height:85px;
+        transition: width 0.5s ease;
+-webkit-transition: width 0.5s ease;
+    }
+    
+    .calendar{
+        width: calc(100% - 125px) 
+    }
     
 }
 
@@ -842,6 +933,29 @@ a {
         width:130px;   
     }
     
+    .coursetime{
+        display:none;
+    }
+    
+    .coursemain{
+        margin: 0 0.5em;
+    }
+    
+    .coursename{
+        font-size: 0.75em;
+        
+    }
+    
+    .location{
+        font-size: 0.6em;
+    }
+    .extra{
+        font-size: 0.6em;
+    }
+    
+
+    
+    
     
 }
 
@@ -870,6 +984,34 @@ a {
     
     .hide img{
         margin-left:1.2em;
+    }
+    
+    .popup2{
+        visibility: visible;
+    }
+    
+    .pop-up {
+    display: none;
+    position: absolute;
+    left: -45vw;
+    top:-20vw;
+}
+    
+    
+    .pop-up img{
+        box-shadow: 0 0 20px rgba(0,0,0,);
+    }
+    .popup1{
+        display:none;
+    }
+    
+    .side{
+        display:none;
+    }
+    
+    .calendar{
+        width: calc(100% - 35px) ;
+        
     }
     
 }
